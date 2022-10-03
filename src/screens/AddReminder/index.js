@@ -23,7 +23,7 @@ const AddReminder = props => {
             return;
         }
         if (!date){
-            alert('Please enter a date in format YYYY-MM-DD.');
+            alert('Please enter a date in format MM-DD-YYYY.');
             return;
         }
         
@@ -60,7 +60,7 @@ const AddReminder = props => {
                     onChangeText={value => setDate(value)}
                     style={styles.date}
                     clearBottunMode={'while-editing'}
-                    placeholder={'Enter Date in format YYYY-MM-DD'}
+                    placeholder={'Enter Date in format MM-DD-YYYY'}
                     placeholderTextColor={'grey'}
                 />
             </View>
